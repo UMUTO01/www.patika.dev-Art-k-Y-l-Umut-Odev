@@ -1,0 +1,23 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter Number");
+        int a = scan.nextInt();
+        Mount(a);
+
+
+    }
+    public static void Mount(int M){
+        if(M%100 != 0 & M%4==0){
+            System.out.print("Ayınız Artık Yıl Değil");
+        }
+        if(M%400 == 0){
+            System.out.print("Ayınız Artık Yıl Değil" );
+        }
+    }
+}
